@@ -1,0 +1,49 @@
+.thumbnail {
+  width: 400px;
+  height: 600px;
+}
+
+div.active {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.active > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.gutter {
+  position: relative;
+}
+
+.gutter-images {
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+
+.gutter-images > img {
+  width: 20%;
+}
+
+a.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.nav.right {
+  left: 95%;
+}
+
+.gutter:after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,32 @@
+div.carousel {
+  position: relative;
+  margin: 0 auto;
+  height: 500px;
+  width: 200px;
+}
+
+div.items{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.items > :not(.active){
+  display: none;
+}
+
+.active {
+  display: block;
+  position: absolute;
+  transition-property: left;
+  transition-duration: 0.5s;
+  left: 0%;
+}
+
+.right {
+  left: 100%;
+}
+
+.left {
+  left: -100%;
+}

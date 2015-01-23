@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+    <script src="./jquery-1.11.2.min.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+  </head>
+  <body>
+    <ul class="tabs" data-content-tabs="{tabs: content-tabs}">
+      <li><a href="#corgi" class="active">Corgi</a></li>
+      <li><a href="#german-shepherd">German Sheperd</a></li>
+      <li><a href="#pitbull">Pitbull</a></li>
+    </ul>
+    <div id="content-tabs">
+      <div class="tab-pane active" id="corgi">
+        <p>I like corgis!</p>
+      </div>
+      <div class="tab-pane" id="german-shepherd">
+        <p>I also like German shepherds!</p>
+      </div>
+      <div class="tab-pane" id="pitbull">
+        <p>Some people don't like pitbulls but I do!</p>
+      </div>
+    </div>
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>

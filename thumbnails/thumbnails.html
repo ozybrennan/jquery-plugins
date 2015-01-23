@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Cool Website</title>
+  <script src="./jquery-1.11.2.min.js"></script>
+  <script src="./thumbnails.js"></script>
+  <link href="./thumbnails.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+</head>
+<body>
+  <div class="thumbnail">
+    <div class="active"></div>
+    <div class="gutter">
+      <a href="javascript:void(0)" class="nav left">&lt;</a>
+      <div class="gutter-images">
+        <img src="http://placekitten.com/g/300/200"/>
+        <img src="http://placekitten.com/g/300/300"/>
+        <img src="http://placekitten.com/g/300/400"/>
+        <img src="http://placekitten.com/g/300/500"/>
+        <img src="http://placekitten.com/g/300/600"/>
+        <img src="http://placekitten.com/g/400/200"/>
+        <img src="http://placekitten.com/g/400/800"/>
+        <img src="http://placekitten.com/g/400/700"/>
+        <img src="http://placekitten.com/g/400/500"/>
+        <img src="http://placekitten.com/g/400/600"/>
+        <img src="http://placekitten.com/g/500/200"/>
+        <img src="http://placekitten.com/g/500/300"/>
+        <img src="http://placekitten.com/g/500/400"/>
+        <img src="http://placekitten.com/g/500/500"/>
+        <img src="http://placekitten.com/g/500/600"/>
+      </div>
+      <a href="javascript:void(0)" class="nav right">&gt;</a>
+    </div>
+  </div>
+  <script>
+  $(function() {
+    $('.thumbnail').thumbnail();
+  })
+  </script>
+</body>
+</html>
